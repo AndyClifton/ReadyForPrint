@@ -9,12 +9,12 @@ The function has several arguments that must be supplied in the correct order.
 readyforprint([W H],fontsize, fgc, bgc, LineWidth,FigureHandle) 
 ````
 The arguments are:
-`[W H]`; width and height of the image (inches). This is the size of the output you'll get using the `print()` command. Defaults [6 3] if left empty. 
-`fontsize`;	Font size (pts). This will be the font size of the labels on the x and y-axis. Tick labels are set to 80% of this size (limited to 6 pts or above). Titles are set to 120% of this size, and bold. Defaults to 8 if left empty. 
-`fgc`; foreground colour, either as 'r' or RGB [0.5 0.5 0.5] style. Defaults to 'k' if left empty. 
-`bgc`; background colour, either as 'r' or RGB [0.5 0.5 0.5] style. Defaults to 'w' if left empty. 
-`LineWidth`;	Width of lines in figures. use 0.5 for journal plots, 2 for overhead presentations, etc. Defaults to 0.5 if left empty. 
-`FigureHandle`:	Optional; handle of the figure to prepare for printing. Defaults to the current figure.
++ `[W H]`; width and height of the image (inches). This is the size of the output you'll get using the `print()` command. Defaults [6 3] if left empty. 
++ `fontsize`;	Font size (pts). This will be the font size of the labels on the x and y-axis. Tick labels are set to 80% of this size (limited to 6 pts or above). Titles are set to 120% of this size, and bold. Defaults to 8 if left empty. 
++ `fgc`; foreground colour, either as 'r' or RGB [0.5 0.5 0.5] style. Defaults to 'k' if left empty. 
++ `bgc`; background colour, either as 'r' or RGB [0.5 0.5 0.5] style. Defaults to 'w' if left empty. 
++ `LineWidth`;	Width of lines in figures. use 0.5 for journal plots, 2 for overhead presentations, etc. Defaults to 0.5 if left empty. 
++ `FigureHandle`; Optional. Handle of the figure to prepare for printing. Defaults to the current figure.
 
 The sizes, face, and edge colors of markers are not normally modified. However, data that have been plotted with `'MarkerEdgeColor'` set to `'k'` and `'MarkerFaceColor'` set to `'w'` will be plotted with the edges set to the new foreground color, and the marker filled with the new background color.
 
